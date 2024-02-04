@@ -7,19 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Charles Wilhelm</title>
-    <!-- Bootstrap CSS -->
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add this to the head of your HTML document -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez4W1qkKdFqPqGFF46M49E2SlbsXJo5FO5Lw9YzSwDOw2qMjz6Psm+J3WlCTz7/a" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
+    
     <style>
         body {
             background-color: #f8f9fa;
         }
         .container {
-        max-width: 1200px; /* Adjust the max-width as needed */
-        margin: 50px auto; /* Center the container */
+        max-width: 1200px; 
+        margin: 50px auto; 
         font-family: 'Oswald', sans-serif;
     }
         .profile-image {
@@ -29,14 +29,14 @@
         .social-icons a {
             margin: 0 10px;
         }
-        /* New styles for the sidebar */
+        
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
             height: 100%;
             width: 300px;
-            background-color: #343a40; /* Dark background color */
+            background-color: #343a40; 
             padding-top: 20px;
             color: #fff;
             text-align: center;
@@ -45,10 +45,10 @@
             font-family: 'Oswald', sans-serif;
         }
         .sidebar img {
-            width: 80%; /* Adjust the width as needed */
+            width: 80%; 
             border-radius: 50%;
             margin-bottom: 20px;
-            display: block; /* Center the image */
+            display: block; 
             margin-left: auto;
             margin-right: auto;
         }
@@ -60,23 +60,45 @@
         }
        
      #about .about-text {
-    font-size: 21px; /* Adjust the font size as needed */
+    font-size: 21px;
     }
 
-    
+    #experience ul li,
+    #skills ul li,
+    #professionaldevelopment {
+    font-size: 20px !important;
+}
+
+#skills ul {
+        list-style: disc; 
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        margin-left: 25px;
+    }
+
+    #skills li {
+        width: 48%; 
+        margin-bottom: 10px; 
+    }
+    #experience ul li,
+    #professionaldevelopment ul li {
+        margin-left: -16px;
+    }
     </style>
 
 </head>
 <body>
 
-<!-- Sidebar -->
 <div class="sidebar">
     <img src="headshot.jpg" class="img-thumbnail" alt="Your Photo" class="profile-image">
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#education">Education</a>
     <a href="#certifications">Certifications</a>
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
+    <a href="#professionaldevelopment">Professional Development</a>
     <a href="#projects">Projects</a>
 </div>
 
@@ -101,6 +123,20 @@
 
     <hr>
 
+    <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS Virtual Private Cloud</li>
+            <li>Cloud resource security</li>
+            <li>Infrastructure as Code</li>
+            <li>Linux administration</li>
+            <li>Networking fundamentals</li>
+            <li>Excellent communication and customer service</li>
+        </ul>
+    </div>
+
+    <hr>
+
     <div>
         <div id="education">
             <h2>Education</h2>
@@ -112,7 +148,6 @@
                 </div>
                 <img src="wgu.png" class="ml-3" alt="University Logo" style="width: 100px; margin-top: -15px">
             </div>
-            <!-- Add more education entries as needed -->
         </div>
         
 
@@ -138,14 +173,13 @@
             <img src="C:\Users\cwilhelm\OneDrive - Sault College\Pictures\LPIE.png" style="width: 100px; height: 100px" alt="LPIE"></a>
         <a href="https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565" target="_blank" style="margin: 10px;">
             <img src="C:\Users\cwilhelm\OneDrive - Sault College\Pictures\ITIL4.png" style="width: 100px; height: 100px" alt="ITIL 4"></a>
-        
-    </div>
+        </div>
 
     <hr>
 
     <div id="experience">
         <h2>Experience</h2>
-        <h5 class="mt-0">Infrastructure Technician</h5>
+        <h4 class="mt-0">Infrastructure Technician</h4>
         <h6 class="mt-0">Sault College, 2023-Present</h6>
         <ul>
             <li>Built, tested, and finalized a custom Windows 11 machine image using VMWare Workstation.</li>
@@ -156,19 +190,31 @@
             <li>Improved and maintained Active Directory accuracy by auditing Users and Organizational Units.</li>
             <li>Assisted in the installation and configuration of enterprise-grade servers.</li>
             <li>Troubleshot, diagnosed, and resolved hardware, software, and networking issues.</li>
-            
+        </ul>
+        <h4 class="mt-0">Service Desk Associate</h4>
+        <h6 class="mt-0">Sault College, 2022-2023</h6>
+        <ul>
+            <li>Utilized the TeamDynamix ticket system to assess and track service requests and incidents.</li>
+            <li>Resolved service requests and incidents while progressing tickets through their lifecycle and providing updates to end-users.</li>
+            <li>Engaged end-users and conducted system diagnostics to investigate and resolve issues and provide to provide technical assistance and support.</li>
+            <li>Used network tools to gather switch port information and diagnose related issues.</li>
+            <li>Employed network cable tracing tools to aid in providing connections to the patch panel and switch.</li>
+            <li>Installed, tested, and troubleshot wireless access points.</li>
+            <li>Deployed hundreds of workstations, ensuring the functionality of hardware, software, and networking.</li>
+            <li>Configured appropriate static IP addresses for lab computers in accordance with the existing IPV4 addressing scheme.</li>
         </ul>
     </div>
 
-    <div id="skills">
-        <h2>Skills</h2>
+    <hr>
+
+    <div id="professionaldevelopment">
+        <h2>Professional Development</h2>
         <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>React</li>
-            <!-- Add more skills as needed -->
+            <li>Currently pursuing RedHat Certified Systems Administrator certification.</li>
+            <li>Administering an AWS home lab to foster skill and knowledge acquisition.</li>
+            <li>Building Terraform scripts to automate deployment of increasingly-complex AWS infrastructure.</li>
+            <li>Building and deploying containers using Docker.</li>
+            <li>Completion of the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a>.</li>
         </ul>
     </div>
 
@@ -176,17 +222,14 @@
 
     <div id="projects">
         <h2>Projects</h2>
-        <!-- Replace the href and img src with your own links and images -->
         <div class="social-icons">
            <p class="mb-3"><a href="https://github.com/charles-wilhelm-cloud" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/charles-wilhelm-cloud" target="_blank">AWS 1</a> - <a href="https://www.linkedin.com/in/charles-wilhelm-cloud" target="_blank">AWS 2</a> - <a href="https://www.linkedin.com/in/charles-wilhelm-cloud" target="_blank">AWS 3</a></p>
            <p><a href="your-project-link-1" target="_blank"><img src="your-project-image-1.jpg" alt="Project 1"></a></p>
            <p><a href="your-project-link-2" target="_blank"><img src="your-project-image-2.jpg" alt="Project 2"></a></p>
-            <!-- Add 7 more project links and images as needed -->
         </div>
     </div>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
